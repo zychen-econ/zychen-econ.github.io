@@ -57,7 +57,6 @@ body {
     padding-right: 10%;
     color: #544235;
     line-height: 1.55;
-    min-width: 900px;
     background-color: #F6EFE4;
 }
 
@@ -185,6 +184,10 @@ a:hover {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 50px;
+}
+
+#info_main_container.no-sidebar {
+    padding-left: 50px;
 }
 
 #information {
@@ -362,6 +365,131 @@ details summary:hover {
 
 details[open] summary {
     margin-bottom: 8px;
+}
+
+/* ===================================================================
+   Responsive — tablets & small screens
+   =================================================================== */
+@media (max-width: 768px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #name {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    #navigation {
+        max-width: 100%;
+    }
+
+    #navigation ul:before,
+    #navigation ul:after {
+        display: none;
+    }
+
+    #navigation a, #navigation a:visited {
+        padding: 6px 12px;
+    }
+
+    #wrapper {
+        padding: 0;
+    }
+
+    #info_main_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #information {
+        flex: none;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0 24px;
+        padding: 10px 0;
+    }
+
+    #information .cropped-image-container {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+    }
+
+    #information .cropped-image {
+        transform: scale(2);
+        transform-origin: 70% 25%;
+    }
+
+    div.info_title {
+        margin-top: 8px;
+    }
+
+    #main {
+        flex: none;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    #info_main_container.no-sidebar {
+        padding-left: 0;
+    }
+
+    .abstract {
+        padding: 8px 10px;
+    }
+}
+
+/* ===================================================================
+   Responsive — phones
+   =================================================================== */
+@media (max-width: 480px) {
+    body {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #header {
+        padding-top: 20px;
+        padding-bottom: 8px;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    #navigation {
+        font-size: 0.8rem;
+        padding: 4px 0 8px;
+    }
+
+    #navigation li {
+        margin: 0 4px;
+    }
+
+    #navigation a, #navigation a:visited {
+        padding: 6px 10px;
+    }
+
+    #information {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .research_item {
+        padding-left: 14px;
+    }
+
+    .research_title {
+        font-size: 1rem;
+    }
+
+    .research_title::before {
+        left: -13px;
+    }
 }
 
 #footer {

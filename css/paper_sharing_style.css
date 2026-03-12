@@ -89,3 +89,31 @@ body {
     color: #9B7A60;
 }
 
+/* ===================================================================
+   Responsive — paper sharing sub-pages
+   =================================================================== */
+@media (max-width: 768px) {
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .theorem {
+        padding: 10px;
+        margin: 14px 0;
+    }
+
+    .date {
+        float: none !important;
+        display: block;
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
