@@ -1,0 +1,53 @@
+<!-- SPA shell — index.html, research.html, notes.html are identical copies.
+     If you edit one, please sync the others. -->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="msvalidate.01" content="8E53B8A0E197DC6800DF72F7C8BB956F" />
+    <title>Zeyu CHEN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="/index.html" id="name">Zeyu CHEN</a>
+    </div>
+
+    <div id="wrapper">
+        <div id="navigation">
+            <ul>
+                <li id="home" style="position: relative">
+                    <a href="/index.html"> HOME </a>
+                </li>
+                <li id="research" style="position: relative">
+                    <a href="/research.html"> RESEARCH </a>
+                </li>
+                <li id="notes" style="position: relative">
+                    <a href="/notes.html"> NOTES </a>
+                </li>
+                <li id="cv" style="position: relative">
+                    <a href="/assets/Zeyuchen_CV.pdf"> CV </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content-area"></div>
+    </div>
+
+    <div id="footer">
+        &copy; 2024–<span id="year"></span> Zeyu CHEN.
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

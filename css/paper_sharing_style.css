@@ -1,0 +1,91 @@
+
+body {
+    font-family: "Carlito", 'Canger', sans-serif;
+    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    color: #544235;
+    line-height: 1.55;
+    background-color: #F6EFE4;
+}
+
+#main {
+    flex: 1 1 600px;
+    max-width: 1000px;
+    min-height: 100px;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#main p {
+    margin-left: 0cm;
+    margin-bottom: 6px;
+}
+
+
+#note a {
+    color: #544235;
+    transition: color 0.2s;
+}
+
+#note a:hover {
+    color: #C4793A;
+}
+
+#article_title {
+    font-size: 1.15rem;
+}
+
+#article_title a {
+    color: #544235;
+    transition: color 0.2s;
+}
+
+#article_title a:hover {
+    color: #C4793A;
+}
+
+
+.theorem {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #CEBFA8;
+}
+
+.abstract {
+    font-size: 0.9rem;
+    font-family: "Carlito", 'Canger', sans-serif;
+    line-height: 1.5;
+    margin-top: 5px;
+    color: #544235;
+}
+
+.presented {
+    margin-left: 1.5em;
+    display: block;
+}
+
+#author a {
+    color: #544235;
+    transition: color 0.2s;
+}
+
+#author a:hover {
+    color: #C4793A;
+}
+
+.notes_title {
+    font-size: 1.1rem;
+    font-family: "Carlito", 'Canger', sans-serif;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.85rem;
+    font-family: 'OpenSans', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #9B7A60;
+}
+

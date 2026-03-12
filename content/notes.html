@@ -1,0 +1,144 @@
+<div id="info_main_container" style="padding-left:50px">
+
+    <div id="main">
+        <!--<p style="text-decoration: underline;">Under construction ...</p>-->
+        
+        <p><em>This page serves as an ongoing archive of some selected academic notes. It is hoped that these notes may also be beneficial to others. Please be advised that: (i) all references remain the intellectual property of their original authors, and original links will be provided whenever possible; and (ii) these notes are intended as concise reminders of the content, once you are already familiar with the original papers, rather than substitutes for them.</em></p>
+
+        <h2>Online Seminars</h2>
+        
+        <p></p>
+
+        <ul>
+            <li>Below is a list of online seminars primarily focusing on spatial, development, and applied microeconomics.</li>
+            <ul>
+                <li><a href="https://sites.google.com/view/economicseminar/home" target="_blank">Applied Economics Workshop (AEW)</a>: A monthly applied economics workshop hosted by several Asian research universities and institutes (HKUST, NUS, UTokyo, NTU, etc.).</li>
+                <li><a href="https://cep.lse.ac.uk/_new/events/trade-and-urban-seminars/" target="_blank">Trade and Urban Seminars</a>: Seminars in international economics and regional and urban economics held by LSE, both online and in person.</li>
+                <li><a href="https://osus.info/" target="_blank">Online Spatial & Urban Seminar (OSUS)</a>: A zoom-based economics workshop supported by the Urban Economics Association.</li>
+                <li><a href="https://cepr.org/events/event-series/virtual-development-economics-series" target="_blank">Virtual Development Economics Series (VDEV/CEPR/BREAD)</a>: An online seminar series, featuring invited speakers in the area of development economics.</li>
+                <li><a href="https://workshop-efi.com/" target="_blank">Workshop on Entrepreneurial Finance and Innovation (WEFI)</a>: A bi-weekly, virtual workshop featuring research in entrepreneurial finance and innovation.</li>
+                <li><a href="https://www.aeaweb.org/conference/past-annual-meetings" target="_blank">AEA Annual Meeting</a>: This webpage archives videos of AEA Recent Developments Lectures and ASSA Webcasts of Select Sessions from past years.</li>
+                <li><a href="https://urbaneconomics.org/workshops/lectures2020/" target="_blank">2020 Lectures on Urban Economics</a>: Not a seminar but a very helpful lecture series for PhD students interested in spatial economics.</li>
+            </ul>
+            <li>Additional online seminars covering a wider range of fields are listed on the <a href="https://www.aeaweb.org/resources/online-seminars" target="_blank">AEA Online Seminars page</a> and <a href="https://ideas.repec.org/v/" target="_blank">IDEAS Virtual Economics Seminar Calendar</a>.</li>
+        </ul>
+
+
+
+        <h2>Paper Sharing Column</h2>
+
+        <ul>
+            <li>Clicking <a href="notes/paper_sharing/index.html">[here]</a> leads to a column containing some introductory articles I've written (in Chinese) for some excellent published/working papers. These are usually the papers I shared at workshops.</li>
+        </ul>
+
+        <h2>Quantitative Spatial Equilibrium</h2>
+
+        <ul>
+            <li style="margin-bottom: 10px;">
+                Notes on models <br/>
+                <em>&emsp; Remarks:</em>
+                <ul style="padding-left: 1.5cm;">
+                    <li>This series of notes focuses on models. I start with some trade models, which typically serve as the baseline to depict specific causes of the formation of trade and labor division. These notes draw a lot from notes written by Allen and Arkolakis for reference. Their notes, available at <a href="https://arkolakis.com/wp-content/uploads/ClassNotes.pdf" target="_blank">[notes link]</a>, are very useful materials for researchers. I then quickly shift to more recent, influential spatial models incorporating labor mobility and additional institutional contexts.</li>
+                    <li>I also recommend readers to read Section 2 of "Quantitative Spatial Economics" (Redding and Rossi-Hansberg, 2017, <em>Annual Review of Economics</em>), available at <a href="https://doi.org/10.1146/annurev-economics-063016-103713" target="_blank">[paper link]</a>, to learn how to choose the building blocks of a spatial model according to our research topic.</li>
+                    <li>Typically, the migration block of a spatial model relies on a discrete choice model. Because of this, researchers would likely find training in these models very beneficial. Furthermore, current urban models often necessitate estimating consumer demand, making training in demand estimation equally crucial. Some useful materials can be found in the "Empirical IO" column below.</li>
+                </ul>
+                <ol>
+                    <li>Trade shaped by love of variety: trade models with CES demand and homogeneous firms (Armington and Krugman). <a href="notes/qse/model/CES_demand_and_homogeneous_firms.pdf" target="_blank">[notes]</a></li>
+                    <li>Trade shaped by productivity variation: trade models with heterogeneous firms (from Ricardo to DFS to EK). <a href="notes/qse/model/EK.pdf" target="_blank">[notes]</a></li>
+                    <li>Trade with sectoral linkages: "Estimates of the Trade and Welfare Effects of NAFTA" (Caliendo and Parro, 2015, <em>RES</em>) (EK + sectoral linkages). <a href="https://doi.org/10.1093/restud/rdu035" target="_blank">[paper link]</a> | <a href="notes/qse/model/CP2015.pdf" target="_blank">[notes]</a> <br/>It's very recommended for all interested readers to replicate this paper's code to learn how to solve a trade model and conduct counterfactual analysis. MATLAB code written by the authors is also available at the <a href="https://doi.org/10.1093/restud/rdu035" target="_blank">[paper link]</a>. I've also attached my own (incomplete) Python replication here: <a href="notes/qse/model/rep_CP2015.zip" target="_blank">[replication files]</a>.</li>
+                    <li>Spatial model baseline: "The Economics of Density: Evidence From the Berlin Wall" (Ahlfeldt et al., 2015, <em>ECTA</em>) (simplified trade block + labor mobility). <a href="https://doi.org/10.3982/ECTA10876" target="_blank">[paper link]</a> | <a href="notes/qse/model/ARSW2015.pdf" target="_blank">[notes]</a></li>
+                    <li>Spatial model in Chinese context: "Trade, Migration, and Productivity: A Quantitative Analysis of China" (Tombe and Zhu, 2019, <em>AER</em>) (simplified CP2015 + ARSW2015 + Chinese context). <a href="https://doi.org/10.1257/aer.20150811" target="_blank">[paper link]</a> | <a href="notes/qse/model/TZ2019.pdf" target="_blank">[notes]</a> <br/>Readers, especially those interested in Chinese topics, might consider replicating this paper's code after replicating CP2015, as it solves a static spatial model (incorporating both trade and migration) yet isn't overly complicated. Authors' code is available at <a href="https://www.openicpsr.org/openicpsr/project/113071/version/V1/view" target="_blank">[code link]</a>. Once this replication is complete, I believe you'll be able to write and solve your own static spatial model.</li>
+                    <li>Dynamics spatial model: "Trade and Labor Market Dynamics: General Equilibrium Analysis of the China Trade Shock" (Caliendo et al., 2019, <em>ECTA</em>). <a href="https://doi.org/10.3982/ECTA13758" target="_blank">[paper link]</a> | (I'm still working hard to figure it out.)</li>
+                </ol>
+            </li>
+
+            <li style="margin-bottom: 10px;">
+                Notes on estimation <br/>
+            
+            </li>
+
+            <!--
+            <li style="margin-bottom: 10px;">
+                Notes on estimation.
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+            -->
+        </ul>
+
+
+        <h2>Empirical IO</h2>
+
+        <ul>
+            <li style="margin-bottom: 10px;">
+                "A Practitioner's Guide to Estimation of Random‐Coefficients Logit Models of Demand" (Nevo, 2001, <em>Journal of Economics & Management Strategy</em>)
+                <ul>
+                    <li>Your first BLP doesn't have to be the BLP!</li>
+                    <li>This paper offers a highly accessible introduction to the BLP framework, complete with sample code for solving the model. While there is now a well-established Python package, <a href="https://pypi.org/project/pyblp/" target="_blank">PyBLP</a>, that implements more advanced algorithms, working through the original approach still offers valuable insight into the core principles of the BLP method and its foundational algorithm. The original paper is available at <a href='https://doi.org/10.1111/j.1430-9134.2000.00513.x' target="_blank">[paper link]</a>. The appendix is particularly valuable as it walks through the estimation steps in detail. A copy can be found at <a href="https://www.rasmusen.org/zg601/readings/Nevo.Ras_guide_appendix.pdf" target="_blank">[appendix]</a>.</li>
+                    <li>I've written a set of notes summarizing the main paper and appendix: <a href="notes/empirical_io/blp/1_1-Notes_Nevo_2000.pdf" target="_blank">[notes]</a>.</li>
+                    <li>I've also replicated Nevo's MATLAB code in Python, available at <a href="notes/empirical_io/blp/1_2-Replication_Nevo_2000.zip" target="_blank">[replication files]</a>. The zip file includes two data files and a Jupyter notebook file (<code>.ipynb</code>) with extensive comments to help clarify each step. For convenience, a HTML preview is provided at <a href="notes/empirical_io/blp/1_3-Code_preview.html" target="_blank">[code preview]</a>.
+                </ul>
+            </li>
+                
+            <li style="margin-bottom: 10px;">
+                <em>Discrete Choice Methods with Simulation</em> (Train, 2009)
+                <ul>
+                    <li>This book is highly valuable for researchers interested in discrete choice models, such as the mixed logit model used in the BLP framework. Professor Train has kindly made the electronic version available at <a href="https://eml.berkeley.edu/books/choice2.html" target="_blank">[book link]</a>.</li>
+                    <li>I've written a set of notes that include Python code to implement some of the practical exercises from the book. These notes were created in Jupyter Notebook and exported to <code>.pdf</code> using Obsidian. <br/>
+                    <ul>
+                        <li>Part I. Model: <a href="notes/empirical_io/discrete_choice_model/Ch01-intro.pdf" target="_blank">[Chap. 1: Intro]</a> | <a href="notes/empirical_io/discrete_choice_model/Ch02-properties_of_models.pdf" target="_blank">[Chap. 2: Model properties]</a> | <a href="notes/empirical_io/discrete_choice_model/Ch03-logit.pdf" target="_blank">[Chap. 3: Logit]</a> | <a href="notes/empirical_io/discrete_choice_model/Ch04-GEV.pdf" target="_blank">[Chap. 4: GEV]</a> | <a href="notes/empirical_io/discrete_choice_model/Ch05-probit.pdf" target="_blank">[Chap. 5: Probit]</a> | <a href="notes/empirical_io/discrete_choice_model/Ch06-mixed_logit.pdf" target="_blank">[Chap. 6: Mixed logit]</a> | ... <br/></li>
+                        <li>Part II. Estimation: <a href="notes/empirical_io/discrete_choice_model/Ch08-numerical_maximization.pdf" target="_blank">[Chap. 8: Numerical Maximization]</a> | ... </li>
+                    </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Others</h2>
+
+        <ul>
+            <li style="margin-bottom: 10px;">
+                "Using and Interpreting Fixed Effects Models" (Breuer and Dehaan, 2024, <em>Journal of Accounting Research</em>)
+                <ul>
+                    <li>This paper is available at <a href="https://doi.org/10.1111/1475-679X.12559" target="_blank">[paper link]</a>. Many of the points it makes are likely already familiar to economic researchers. However, it's still very useful to keep them in mind whenever conducting empirical analysis.</li>
+                    <li>Here are some quick notes summarizing the main points: <a href="notes/20250703_FE_notes.pdf" target="_blank">[notes]</a>.</li>
+                </ul>
+            </li>
+        
+            <li style="margin-bottom: 10px;">
+                "Cluster-robust inference: A guide to empirical practice" (MacKinnon et al., 2023, <em>Journal of Econometrics</em>)
+                <ul>
+                    <li>This is a really useful paper on cluster-robust inference. This original paper can be found at <a href="https://doi.org/10.1016/j.jeconom.2022.04.001" target="_blank">[paper link]</a>.</li>
+                    <li>I've given a few presentations on it, totaling about 3 hours, in a workshop. I also added some extra materials and shared my own thoughts beyond what's covered in the paper, which can be found in the <a href="notes/20230718_cluster_slides.pdf", target="_blank">[slides]</a>.</li>
+                    <!--
+                    <li>I've also uploaded a video about this paper to Bilibili. If you're interested, you can find it there. (●'◡'●)</li>
+                    -->
+                    <details>
+                        <summary>A summary to some key points</summary>
+                            <ol>
+                                <li>When deciding to use asymptotic inference, it is recommended to use asymptotic standard errors calculated from jackknife (leave-one-out) method when sample size is small, since it has better small-sample properties (it is unbiased) and is relatively conservative.</li>
+                                <li>As the sample size increases, there seems to be a lower bound on the shrinkage of the cluster-robust standard error, and thus the underestimation of the standard error due to ignoring the clustered structure becomes increasingly larger. (In other words, it is more necessary to treat clustered structure carefully when the sample size is large.)</li>
+                                <li>When using DD estimates, it is important to cluster at least to the geographic level where the treatment is assigned.</li>
+                                <li>If the number of treatment clusters are small, don't use asymptotic cluster-robust standard errors but use wide-cluster bootstrap standard errors.</li>
+                                <li>In the vast majority of cases, adding fixed effects is not the reason for not clustering.</li>
+                                <li>
+                                    There are two rules of thumb to decide the cluster level:
+                                    <ol type="i">
+                                        <li>An intuitive rule: to choose the most coarse one among all possible levels, up to the point at which there is concern about having too few clusters</li>
+                                        <li>A conservative rule: to report the largest standard error for the coefficient of interest across all estimated at varying possible cluster levels.</li>
+                                    </ol>
+                                </li>
+                                <li>There are some pre-tests that are helpful in deciding the cluster level, but pre-tests always lead to over-reject because they in and of themselves could make mistakes. Therefore, The ideal procedure is to cluster based on the second rule of thumb and use pre-tests to further support the choice.</li>
+                                <li>The permutation test ("placebo test") commonly used in DD estimation (especially in Chinese literature) is used to support the statistic inference rather than the causal identification.</li>
+                                <li>The asymptotic inference relies on the central limit theorem (CLT). The number of clusters and the heterogeneity among clusters both determine whether asymptotic theories work well. Therefore, researchers should report the number of clusters and the heterogeneity among clusters. Additionally, it implies that there will not be a universal threshold of clusters number \( G^* \) beyond which we can be assured of effective asymptotic inference. </li>
+                                <li>When the number of clusters is small or there are huge heterogeneity among clusters, the asymptotic standard errors usually fail to work effectively.</li>
+                                <li>In addition to the default asymptotic standard errors in Stata, it's always recommended to report p-values calculated using wilde bootstrap inference, especially restricted wild-cluster bootstrap (WCR).</li>
+                            </ol>
+                    </details>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
