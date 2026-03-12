@@ -383,6 +383,9 @@ details[open] summary {
 
     #navigation {
         max-width: 100%;
+        border-top: 1px solid #CEBFA8;
+        border-bottom: 1px solid #CEBFA8;
+        padding: 4px 0 4px;
     }
 
     #navigation ul:before,
@@ -406,22 +409,14 @@ details[open] summary {
     #information {
         flex: none;
         max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 0 24px;
+        text-align: center;
         padding: 10px 0;
     }
 
     #information .cropped-image-container {
-        width: 100px;
-        height: 100px;
-        flex-shrink: 0;
-    }
-
-    #information .cropped-image {
-        transform: scale(2);
-        transform-origin: 70% 25%;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 10px;
     }
 
     div.info_title {
@@ -463,7 +458,7 @@ details[open] summary {
 
     #navigation {
         font-size: 0.8rem;
-        padding: 4px 0 8px;
+        padding: 4px 0 4px;
     }
 
     #navigation li {
@@ -472,11 +467,6 @@ details[open] summary {
 
     #navigation a, #navigation a:visited {
         padding: 6px 10px;
-    }
-
-    #information {
-        text-align: center;
-        justify-content: center;
     }
 
     .research_item {
