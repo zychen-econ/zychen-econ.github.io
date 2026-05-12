@@ -244,8 +244,8 @@ div.info_content {
 .cropped-image {
     width: 100%;
     height: auto;
-    transform: scale(2);
-    transform-origin: 70% 25%;
+    transform: scale(1.7);
+    transform-origin: 75% 12%;
 }
 
 #main {
